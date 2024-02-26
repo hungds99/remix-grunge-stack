@@ -1,9 +1,12 @@
 name: 🥺 No Response
 
 on:
-  schedule:
-    # Schedule for five minutes after the hour, every hour
-    - cron: "5 * * * *"
+  push:
+    branches:
+      - main
+  # schedule:
+  # Schedule for five minutes after the hour, every hour
+  # - cron: "5 * * * *"
 
 permissions:
   issues: write
